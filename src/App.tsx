@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { 
-  Zap, Shield, BarChart3, Users, Globe, Star, ArrowRight, 
+  Zap, Shield, BarChart3, Users,  Star, ArrowRight, 
   Play, ChevronDown, Menu, X 
 } from 'lucide-react';
 
 const App: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [selectedPlan, setSelectedPlan] = useState('pro');
+  const [, setSelectedPlan] = useState('pro');
 
   const { scrollYProgress } = useScroll();
   const headerOpacity = useTransform(scrollYProgress, [0, 0.1], [1, 0.95]);
